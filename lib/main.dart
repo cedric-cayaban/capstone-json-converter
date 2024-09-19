@@ -20,11 +20,27 @@ import 'package:json_converter/standard/capital/caps_b.dart';
 import 'package:json_converter/standard/capital/caps_c.dart';
 import 'package:json_converter/standard/capital/caps_d.dart';
 import 'package:json_converter/standard/capital/caps_e.dart';
+import 'package:json_converter/standard/capital/caps_f.dart';
+import 'package:json_converter/standard/capital/caps_g.dart';
+import 'package:json_converter/standard/capital/caps_h.dart';
+import 'package:json_converter/standard/capital/caps_i.dart';
+import 'package:json_converter/standard/capital/caps_j.dart';
+import 'package:json_converter/standard/capital/caps_k.dart';
+import 'package:json_converter/standard/capital/caps_l.dart';
+import 'package:json_converter/standard/capital/caps_m.dart';
 import 'package:json_converter/standard/small/small_a.dart';
 import 'package:json_converter/standard/small/small_b.dart';
 import 'package:json_converter/standard/small/small_c.dart';
 import 'package:json_converter/standard/small/small_d.dart';
 import 'package:json_converter/standard/small/small_e.dart';
+import 'package:json_converter/standard/small/small_f.dart';
+import 'package:json_converter/standard/small/small_g.dart';
+import 'package:json_converter/standard/small/small_h.dart';
+import 'package:json_converter/standard/small/small_i.dart';
+import 'package:json_converter/standard/small/small_j.dart';
+import 'package:json_converter/standard/small/small_k.dart';
+import 'package:json_converter/standard/small/small_l.dart';
+import 'package:json_converter/standard/small/small_m.dart';
 
 void saveOffsetsToFile(Map<String, Map<String, List<Offset?>>> offsetsMap) {
   Map<String, dynamic> jsonMap = offsetsMap.map((category, letters) {
@@ -116,16 +132,8 @@ void main() {
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
     'number': {
-      '0': number_0,
-      '1': number_1,
-      '2': number_2,
-      '3': number_3,
-      '4': number_4,
-      '5': number_5,
-      '6': number_6,
-      '7': number_7,
-      '8': number_8,
-      '9': number_9,
+      'M': letter_M,
+      'm': letter_m,
     }
   };
 
