@@ -155,22 +155,15 @@ void main() {
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
     'standard': {
-      'U': letter_U,
-      'u': letter_u,
       'V': letter_V,
       'v': letter_v,
       'W': letter_W,
       'w': letter_w,
       'X': letter_X,
       'x': letter_x,
-      'Y': letter_Y,
-      'y': letter_y,
-      'Z': letter_Z,
-      'z': letter_z,
     }
   };
 
-  //PAG UPDATE, LAGYAN MO NG PARAMETER NA TRUE
   mergeOffsetsToFile(newOffsetsMap);
   //}
 }
