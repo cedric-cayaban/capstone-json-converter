@@ -28,6 +28,13 @@ import 'package:json_converter/standard/capital/caps_j.dart';
 import 'package:json_converter/standard/capital/caps_k.dart';
 import 'package:json_converter/standard/capital/caps_l.dart';
 import 'package:json_converter/standard/capital/caps_m.dart';
+import 'package:json_converter/standard/capital/caps_n.dart';
+import 'package:json_converter/standard/capital/caps_o.dart';
+import 'package:json_converter/standard/capital/caps_p.dart';
+import 'package:json_converter/standard/capital/caps_q.dart';
+import 'package:json_converter/standard/capital/caps_r.dart';
+import 'package:json_converter/standard/capital/caps_s.dart';
+import 'package:json_converter/standard/capital/caps_t.dart';
 import 'package:json_converter/standard/small/small_a.dart';
 import 'package:json_converter/standard/small/small_b.dart';
 import 'package:json_converter/standard/small/small_c.dart';
@@ -41,6 +48,13 @@ import 'package:json_converter/standard/small/small_j.dart';
 import 'package:json_converter/standard/small/small_k.dart';
 import 'package:json_converter/standard/small/small_l.dart';
 import 'package:json_converter/standard/small/small_m.dart';
+import 'package:json_converter/standard/small/small_n.dart';
+import 'package:json_converter/standard/small/small_o.dart';
+import 'package:json_converter/standard/small/small_p.dart';
+import 'package:json_converter/standard/small/small_q.dart';
+import 'package:json_converter/standard/small/small_r.dart';
+import 'package:json_converter/standard/small/small_s.dart';
+import 'package:json_converter/standard/small/small_t.dart';
 
 void saveOffsetsToFile(Map<String, Map<String, List<Offset?>>> offsetsMap) {
   Map<String, dynamic> jsonMap = offsetsMap.map((category, letters) {
@@ -71,18 +85,17 @@ void mergeOffsetsToFile(Map<String, Map<String, List<Offset?>>> newOffsetsMap,
 
   // Loop through the new offsets map and merge them into the existing JSON map
   newOffsetsMap.forEach((category, letters) {
-    // Ensure the category exists
+    // Ensure the category (e.g., 'standard') exists in the existing map
     if (!existingJsonMap.containsKey(category)) {
       existingJsonMap[category] = {};
     }
 
     letters.forEach((letter, newOffsets) {
-      // Convert the new offsets to JSON format
       List<Map<String, dynamic>?> jsonNewOffsets = newOffsets.map((offset) {
         return offset != null ? {'dx': offset.dx, 'dy': offset.dy} : null;
       }).toList();
 
-      // If the letter exists and update flag is true, merge the offsets
+      // If the letter already exists and update is true, merge offsets
       if (update && existingJsonMap[category].containsKey(letter)) {
         List<dynamic> existingOffsets = existingJsonMap[category][letter];
 
@@ -90,25 +103,23 @@ void mergeOffsetsToFile(Map<String, Map<String, List<Offset?>>> newOffsetsMap,
         for (int i = 0; i < newOffsets.length; i++) {
           if (i < existingOffsets.length) {
             if (newOffsets[i] != null) {
-              existingOffsets[i] =
-                  jsonNewOffsets[i]; // Update only non-null points
+              existingOffsets[i] = jsonNewOffsets[i]; // Update non-null points
             }
           } else {
-            existingOffsets.add(jsonNewOffsets[
-                i]); // Add new points if the index is out of bounds
+            existingOffsets.add(jsonNewOffsets[i]); // Add new points
           }
         }
 
-        // Save the updated offsets back into the map
-        existingJsonMap[category][letter] = existingOffsets;
+        existingJsonMap[category][letter] =
+            existingOffsets; // Save updated offsets
       } else {
-        // Merge or overwrite the new offsets for the given letter if not updating
+        // If the letter doesn't exist, add it
         existingJsonMap[category][letter] = jsonNewOffsets;
       }
     });
   });
 
-  // Save the merged JSON map back to the file
+  // Save the updated JSON back to the file
   String jsonString = jsonEncode(existingJsonMap);
   file.writeAsStringSync(jsonString);
 }
@@ -131,9 +142,9 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'number': {
-      'M': letter_M,
-      'm': letter_m,
+    'standard': {
+      'T': letter_T,
+      't': letter_t,
     }
   };
 
