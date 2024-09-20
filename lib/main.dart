@@ -35,6 +35,12 @@ import 'package:json_converter/standard/capital/caps_q.dart';
 import 'package:json_converter/standard/capital/caps_r.dart';
 import 'package:json_converter/standard/capital/caps_s.dart';
 import 'package:json_converter/standard/capital/caps_t.dart';
+import 'package:json_converter/standard/capital/caps_u.dart';
+import 'package:json_converter/standard/capital/caps_v.dart';
+import 'package:json_converter/standard/capital/caps_w.dart';
+import 'package:json_converter/standard/capital/caps_x.dart';
+import 'package:json_converter/standard/capital/caps_y.dart';
+import 'package:json_converter/standard/capital/caps_z.dart';
 import 'package:json_converter/standard/small/small_a.dart';
 import 'package:json_converter/standard/small/small_b.dart';
 import 'package:json_converter/standard/small/small_c.dart';
@@ -55,6 +61,12 @@ import 'package:json_converter/standard/small/small_q.dart';
 import 'package:json_converter/standard/small/small_r.dart';
 import 'package:json_converter/standard/small/small_s.dart';
 import 'package:json_converter/standard/small/small_t.dart';
+import 'package:json_converter/standard/small/small_u.dart';
+import 'package:json_converter/standard/small/small_v.dart';
+import 'package:json_converter/standard/small/small_w.dart';
+import 'package:json_converter/standard/small/small_x.dart';
+import 'package:json_converter/standard/small/small_y.dart';
+import 'package:json_converter/standard/small/small_z.dart';
 
 void saveOffsetsToFile(Map<String, Map<String, List<Offset?>>> offsetsMap) {
   Map<String, dynamic> jsonMap = offsetsMap.map((category, letters) {
@@ -143,8 +155,18 @@ void main() {
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
     'standard': {
-      'T': letter_T,
-      't': letter_t,
+      'U': letter_U,
+      'u': letter_u,
+      'V': letter_V,
+      'v': letter_v,
+      'W': letter_W,
+      'w': letter_w,
+      'X': letter_X,
+      'x': letter_x,
+      'Y': letter_Y,
+      'y': letter_y,
+      'Z': letter_Z,
+      'z': letter_z,
     }
   };
 
