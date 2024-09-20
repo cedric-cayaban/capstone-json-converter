@@ -34,6 +34,7 @@ import 'package:json_converter/standard/capital/caps_p.dart';
 import 'package:json_converter/standard/capital/caps_q.dart';
 import 'package:json_converter/standard/capital/caps_r.dart';
 import 'package:json_converter/standard/capital/caps_s.dart';
+import 'package:json_converter/standard/capital/caps_t.dart';
 import 'package:json_converter/standard/small/small_a.dart';
 import 'package:json_converter/standard/small/small_b.dart';
 import 'package:json_converter/standard/small/small_c.dart';
@@ -53,6 +54,7 @@ import 'package:json_converter/standard/small/small_p.dart';
 import 'package:json_converter/standard/small/small_q.dart';
 import 'package:json_converter/standard/small/small_r.dart';
 import 'package:json_converter/standard/small/small_s.dart';
+import 'package:json_converter/standard/small/small_t.dart';
 
 void saveOffsetsToFile(Map<String, Map<String, List<Offset?>>> offsetsMap) {
   Map<String, dynamic> jsonMap = offsetsMap.map((category, letters) {
@@ -141,8 +143,8 @@ void main() {
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
     'standard': {
-      'S': letter_S,
-      's': letter_s,
+      'T': letter_T,
+      't': letter_t,
     }
   };
 
