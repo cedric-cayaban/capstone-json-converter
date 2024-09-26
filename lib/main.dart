@@ -165,7 +165,6 @@ void main() {
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
     'word': {
-      'at': word_at,
       'on': word_on,
       'in': word_in,
       'cat': word_cat,
