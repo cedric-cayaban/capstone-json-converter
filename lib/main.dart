@@ -67,6 +67,16 @@ import 'package:json_converter/standard/small/small_w.dart';
 import 'package:json_converter/standard/small/small_x.dart';
 import 'package:json_converter/standard/small/small_y.dart';
 import 'package:json_converter/standard/small/small_z.dart';
+import 'package:json_converter/words/word_apple.dart';
+import 'package:json_converter/words/word_at.dart';
+import 'package:json_converter/words/word_bike.dart';
+import 'package:json_converter/words/word_cat.dart';
+import 'package:json_converter/words/word_dog.dart';
+import 'package:json_converter/words/word_kite.dart';
+import 'package:json_converter/words/word_on.dart';
+import 'package:json_converter/words/word_pig.dart';
+import 'package:json_converter/words/words_in.dart';
+import 'package:json_converter/words/words_orange.dart';
 
 void saveOffsetsToFile(Map<String, Map<String, List<Offset?>>> offsetsMap) {
   Map<String, dynamic> jsonMap = offsetsMap.map((category, letters) {
@@ -154,11 +164,16 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'standard': {
-      'Y': letter_Y,
-      'y': letter_y,
-      'Z': letter_Z,
-      'z': letter_z,
+    'word': {
+      'on': word_on,
+      'in': word_in,
+      'cat': word_cat,
+      'dog': word_dog,
+      'pig': word_pig,
+      'bike': word_bike,
+      'kite': word_kite,
+      'apple': word_apple,
+      'orange': word_orange,
     }
   };
 
