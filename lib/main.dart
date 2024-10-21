@@ -4,6 +4,58 @@ import 'dart:ui';
 
 // import 'package:json_converter/cursive/capital/caps_a.dart';
 // import 'package:json_converter/cursive/capital/small_a.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_I.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_a.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_b.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_c.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_d.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_e.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_f.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_g.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_h.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_j.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_k.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_l.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_m.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_n.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_o.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_p.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_q.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_r.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_s.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_t.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_u.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_v.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_w.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_x.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_y.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_z.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_a.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_b.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_c.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_d.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_e.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_f.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_g.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_h.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_i.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_j.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_k.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_l.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_m.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_n.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_o.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_p.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_q.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_r.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_s.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_t.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_u.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_v.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_w.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_x.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_y.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_z.dart';
 import 'package:json_converter/numbers/number_0.dart';
 import 'package:json_converter/numbers/number_1.dart';
 import 'package:json_converter/numbers/number_2.dart';
@@ -164,16 +216,45 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'word': {
-      'on': word_on,
-      'in': word_in,
-      'cat': word_cat,
-      'dog': word_dog,
-      'pig': word_pig,
-      'bike': word_bike,
-      'kite': word_kite,
-      'apple': word_apple,
-      'orange': word_orange,
+    'cursive': {
+      'N' : cursive_letter_N,
+      'n' : cursive_letter_n,
+
+      'O' : cursive_letter_O,
+      'o' : cursive_letter_o,
+
+      'P' : cursive_letter_P,
+      'p' : cursive_letter_p,
+
+      'Q' : cursive_letter_Q,
+      'q' : cursive_letter_q,
+
+      'R' : cursive_letter_R,
+      'r' : cursive_letter_r,
+
+      'S' : cursive_letter_S,
+      's' : cursive_letter_s,
+
+      'T' : cursive_letter_T,
+      't' : cursive_letter_t,
+
+      'U' : cursive_letter_U,
+      'u' : cursive_letter_u,
+
+      'V' : cursive_letter_V,
+      'v' : cursive_letter_v,
+
+      'W' : cursive_letter_W,
+      'w' : cursive_letter_w,
+
+      'X' : cursive_letter_X,
+      'x' : cursive_letter_x,
+
+      'Y' : cursive_letter_Y,
+      'y' : cursive_letter_y,
+
+      'Z' : cursive_letter_Z,
+      'z' : cursive_letter_z,
     }
   };
 

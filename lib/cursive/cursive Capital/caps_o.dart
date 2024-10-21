@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-List<Offset?> letter_O = [
+List<Offset?> cursive_letter_O = [
   Offset(98.0, 52.6),
   Offset(96.4, 56.0),
   Offset(94.8, 59.4),
