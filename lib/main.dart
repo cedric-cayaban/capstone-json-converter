@@ -2,6 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:ui';
 
+import 'package:json_converter/cursive/cursive%20Capital/caps_a.dart';
+import 'package:json_converter/cursive/cursive%20Capital/caps_b.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_a.dart';
+import 'package:json_converter/cursive/cusive%20Small/small_k.dart';
+import 'package:json_converter/standard/small/small_d.dart';
 import 'package:json_converter/words/cursive/cursive_word_apple.dart';
 import 'package:json_converter/words/cursive/cursive_word_at.dart';
 import 'package:json_converter/words/cursive/cursive_word_bike.dart';
@@ -109,17 +114,9 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'cursive word': {
-      'at': cursive_word_at,
-      'on': cursive_word_on,
-      'in': cursive_word_in,
-      'dog': cursive_word_dog,
-      'cat': cursive_word_cat,
-      'pig': cursive_word_pig,
-      'bike': cursive_word_bike,
-      'kite': cursive_word_kite,
-      'apple': cursive_word_apple,
-      'orange': cursive_word_orange,
+    'cursive': {
+      'a' : cursive_letter_a,
+      'k' : cursive_letter_k
     }
   };
 
