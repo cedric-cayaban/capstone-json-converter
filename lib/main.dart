@@ -7,6 +7,7 @@ import 'package:json_converter/cursive/cursive%20Capital/caps_b.dart';
 import 'package:json_converter/cursive/cusive%20Small/small_a.dart';
 import 'package:json_converter/cursive/cusive%20Small/small_k.dart';
 import 'package:json_converter/standard/small/small_d.dart';
+import 'package:json_converter/standard/small/small_q.dart';
 import 'package:json_converter/words/cursive/cursive_word_apple.dart';
 import 'package:json_converter/words/cursive/cursive_word_at.dart';
 import 'package:json_converter/words/cursive/cursive_word_bike.dart';
@@ -114,9 +115,8 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'cursive': {
-      'a' : cursive_letter_a,
-      'k' : cursive_letter_k
+    'standard': {
+      'q' : letter_q,
     }
   };
 
