@@ -21,12 +21,22 @@ import 'package:json_converter/words/cursive/cursive_word_orange.dart';
 import 'package:json_converter/words/cursive/cursive_word_pig.dart';
 import 'package:json_converter/words/standard/word_apple.dart';
 import 'package:json_converter/words/standard/word_at.dart';
+import 'package:json_converter/words/standard/word_bee.dart';
+import 'package:json_converter/words/standard/word_bell.dart';
+import 'package:json_converter/words/standard/word_berry.dart';
 import 'package:json_converter/words/standard/word_bike.dart';
+import 'package:json_converter/words/standard/word_book.dart';
 import 'package:json_converter/words/standard/word_cat.dart';
+import 'package:json_converter/words/standard/word_cherry.dart';
+import 'package:json_converter/words/standard/word_cow.dart';
 import 'package:json_converter/words/standard/word_dog.dart';
+import 'package:json_converter/words/standard/word_is.dart';
 import 'package:json_converter/words/standard/word_kite.dart';
+import 'package:json_converter/words/standard/word_lemon.dart';
+import 'package:json_converter/words/standard/word_no.dart';
 import 'package:json_converter/words/standard/word_on.dart';
 import 'package:json_converter/words/standard/word_pig.dart';
+import 'package:json_converter/words/standard/word_up.dart';
 import 'package:json_converter/words/standard/words_in.dart';
 import 'package:json_converter/words/standard/words_orange.dart';
 
@@ -116,8 +126,17 @@ void main() {
 
 //PARA SA PAG DAGDAG NG LETTER {
   Map<String, Map<String, List<Offset?>>> newOffsetsMap = {
-    'number': {
-      '7' : number_7,
+    'word': {
+      'is' : word_is,
+      'no' : word_no,
+      'up' : word_up,
+      'cow' : word_cow,
+      'bee' : word_bee,
+      'bell' : word_bell,
+      'book' : word_book,
+      'cherry' : word_cherry,
+      'lemon' : word_lemon,
+      'berry' : word_berry,
     }
   };
 
